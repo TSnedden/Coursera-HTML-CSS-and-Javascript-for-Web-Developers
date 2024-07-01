@@ -19,6 +19,10 @@
     margin-left: 5px;
     margin-right: 5px;
   }
+
+  section div {
+    padding: 20px; /* Adds padding inside the div */
+  }
   
   #chicken, #beef, #sushi {
     border: 1px solid black;
