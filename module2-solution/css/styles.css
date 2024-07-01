@@ -1,0 +1,76 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+    font-family: Helvetica;
+  }
+  
+  h1 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  section {
+    border: 1px solid black;
+    background-color: lightgrey;
+    color: black;
+    position: relative; /* Establishes a containing block for absolute positioning */
+    padding-top: 30px; /* Adds padding to ensure the paragraph content starts below the header */
+    margin-bottom: 20px; /* Adds space between sections */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  #chicken, #beef, #sushi {
+    border: 1px solid black;
+    text-align: right;
+    position: absolute; /* Allows precise positioning within the section */
+    top: 0; /* Aligns the element to the top of the section */
+    right: 0; /* Aligns the element to the right of the section */
+    margin: 0; /* Removes any default margins */
+    padding-left: 30px; /* Adds horizontal padding inside the element */
+    padding-right: 30px; /* Adds horizontal padding inside the element */
+  }
+  
+  #chicken {
+    background-color: lightpink;
+    color: black;
+  }
+  
+  #beef {
+    background-color: red;
+    color: white;
+  }
+  
+  #sushi {
+    background-color: gold;
+    color: black;
+  }
+
+/* Respsonsive Framework*/
+
+/********** Mobile View **********/
+@media (max-width: 767px) {
+    section {
+        width: 100%; /* Full view for mobile view */ 
+        float: left;
+    }
+}
+
+/********** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: 48%; /* 50% for tablet view */
+        float: left;
+    }
+    section:nth-child(4) {
+        width: 100%; /* 3rd section gets 100% view */
+    }
+}
+
+/********** Desktop View **********/
+@media (min-width: 992px) {
+    section {
+      width: 30%; /* 33% width for desktop view */
+      float: left;
+    }
+}
