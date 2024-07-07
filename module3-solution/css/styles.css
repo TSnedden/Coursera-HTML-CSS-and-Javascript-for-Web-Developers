@@ -15,7 +15,7 @@
     padding: 0 20px; /* Equal left and right padding for the container */
   }
   
-  .container {
+  .container, .container-fluid {
     margin: 0 auto; /* Center the container */
   }
   
