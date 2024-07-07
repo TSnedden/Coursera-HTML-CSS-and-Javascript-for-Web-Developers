@@ -1,0 +1,82 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+    font-family: Helvetica;
+  }
+  
+  h1 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .row {
+    width: 100%;
+    overflow: hidden; /* Ensure the row clears floated columns */
+    padding: 0 20px; /* Equal left and right padding for the container */
+  }
+  
+  .container {
+    margin: 0 auto; /* Center the container */
+  }
+  
+  section {
+    border: 1px solid black;
+    background-color: lightgrey;
+    color: black;
+    position: relative; /* Establishes a containing block for absolute positioning */
+    padding-top: 50px; /* Adds padding to ensure the paragraph content starts below the header */
+    padding: 20px; /* Adds padding inside the section */
+    margin: 10px 10px; /* Adds space between sections */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+  }
+  
+  section div {
+    padding-top: 20px; /* Adds padding inside the div */
+  }
+
+  #header-nav {
+    background-color: #f8ff33;
+    border-radius: 0;
+    border: 0;
+  }
+
+  .navbar-brand h2 { /* Restaurant name */
+    color: #130d56;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+
+
+  /* Mobile dropdown item color */
+.navbar-nav.visible-xs li a {
+  color: #130d56; /* Text color for dropdown*/
+}
+
+/********** Responsive Design **********/
+/********** Custom styles **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .custom-md-padding {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-sm-padding {
+      padding: 15px;
+  }
+
+  /* Dropdown menu styles */
+  .navbar-collapse {
+      background-color: #ffd700; /* Gold background color for dropdown menu */
+  }
+
+  .navbar-collapse .navbar-nav > li > a:hover {
+      background-color: #e5c100; /* Darker shade of gold for hover */
+      color: #130d56; /* Ensure text color stays the same on hover */
+  }
+}
