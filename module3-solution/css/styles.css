@@ -1,60 +1,78 @@
 /********** Base styles **********/
 * {
-    box-sizing: border-box;
-    font-family: Helvetica;
-  }
-  
-  h1 {
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  
-  .row {
-    width: 100%;
-    overflow: hidden; /* Ensure the row clears floated columns */
-    padding: 0 20px; /* Equal left and right padding for the container */
-  }
-  
-  .container, .container-fluid {
-    margin: 0 auto; /* Center the container */
-  }
-  
-  section {
-    border: 1px solid black;
-    background-color: lightgrey;
-    color: black;
-    position: relative; /* Establishes a containing block for absolute positioning */
-    padding-top: 50px; /* Adds padding to ensure the paragraph content starts below the header */
-    padding: 20px; /* Adds padding inside the section */
-    margin: 10px 10px; /* Adds space between sections */
-    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
-  }
-  
-  section div {
-    padding-top: 20px; /* Adds padding inside the div */
-  }
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
 
-  #header-nav {
-    background-color: #f8ff33;
-    border-radius: 0;
-    border: 0;
-  }
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
 
-  .navbar-brand h2 { /* Restaurant name */
-    color: #130d56;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;
-  }
+.row {
+  width: 100%;
+  overflow: hidden; /* Ensure the row clears floated columns */
+  padding: 0 20px; /* Equal left and right padding for the container */
+}
 
+.container, .container-fluid {
+  margin: 0 auto; /* Center the container */
+}
 
-  /* Mobile dropdown item color */
+section {
+  border: 1px solid black;
+  background-color: lightgrey;
+  color: black;
+  position: relative; /* Establishes a containing block for absolute positioning */
+  padding-top: 50px; /* Adds padding to ensure the paragraph content starts below the header */
+  padding: 20px; /* Adds padding inside the section */
+  margin: 10px 10px; /* Adds space between sections */
+  box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+}
+
+section div {
+  padding-top: 20px; /* Adds padding inside the div */
+}
+
+#header-nav {
+  background-color: #f8ff33;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand h2 { /* Restaurant name */
+  color: #130d56;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+/* Mobile dropdown item color */
 .navbar-nav.visible-xs li a {
-  color: #130d56; /* Text color for dropdown*/
+  color: #130d56; /* Text color for dropdown */
+}
+
+/* Adding border to dropdown list items */
+.navbar-nav.visible-xs {
+  border: 1px solid #130d56; /* Border color for the entire list */
+  border-width: 1px 0; /* Only top and bottom border */
+}
+
+.navbar-nav.visible-xs li {
+  border-bottom: 1px solid #130d56; /* Border color for list items */
+}
+
+.navbar-nav.visible-xs li:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+/* Ensure border-radius is removed for a seamless look */
+.navbar-nav.visible-xs li a {
+  border-radius: 0;
 }
 
 /********** Responsive Design **********/
